@@ -1,0 +1,5 @@
+{
+	"extends": "./tsconfig",
+	"include": ["cypress/**/*.ts"],
+	"exclude": ["lib", "reports", "node_modules"]
+}

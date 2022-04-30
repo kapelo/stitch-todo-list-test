@@ -1,0 +1,15 @@
+{
+    "testFiles": "**/*.feature",
+    "baseUrl": "http://localhost:3000",
+    "env": {
+        "TAGS": "not @ignore"
+      },
+    "retries": {
+        "runMode": 1,
+        "openMode": 1
+    },
+    "video": true,
+    "chromeWebSecurity": false,
+    "pluginsFile": "cypress/plugins/index.ts",
+    "supportFile": "cypress/support/index.ts"
+}

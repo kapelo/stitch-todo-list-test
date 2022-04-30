@@ -1,0 +1,25 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noUnusedLocals": true,
+		"skipLibCheck": true,
+		"target": "es6",
+		"lib": ["es2017", "dom"],
+		"paths": {
+			"lodash-es/*": ["node_modules/@types/lodash-es/*"],
+		},
+		"baseUrl": ".",
+		"outDir": "lib",
+		"module": "commonjs",
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": false,
+		"types": ["cucumber", "node", "cypress"]
+	},
+	"include": ["cypress/**/*.ts"],
+	"exclude": ["lib", "reports"]
+}
