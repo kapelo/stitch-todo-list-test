@@ -16,10 +16,7 @@ Then install all packages by doing a `yarn install`
 
 1. [x] Create a test plan for the todo application
    - **Test Plan**
-     - **Scope**: This test plan describes the testing approach and overall framework that will drive the testing of **Stitch Todo List**. This markdown document introduces:
-       - **Test Strategy**: rules the test will be based on, including the givens of the project (e.g.: start / end dates, objectives, assumptions); description of the process to set up a valid test (e.g.: entry / exit criteria, creation of test cases, specific tasks to perform, scheduling, data strategy)
-       - **Execution Strategy**: describes how the test will be performed and process to identify and report defects, and to fix and implement fixes
-       - **Test Management**: process to handle the logistics of the test and all the events that come up during execution (e.g. communications, escalation procedures, risk and mitigation, team roster)
+     - **Scope**: This test plan describes the testing approach and overall framework that will drive the testing of **Stitch Todo List**.
 
      - **Test Objectives**: The objective of the test is to verify that the functionality of **Stitch Todo List** works according to the requirements. Tests will execute and verify manual and automated test cases, identify, log, and retest all high and medium severity defects per the acceptance criteria, and prioritize lower severity defects for fixing dependent on the time and resources in each sprint. The final product of testing is two-fold:
        - A production-ready software
@@ -35,7 +32,7 @@ Then install all packages by doing a `yarn install`
        - **Creating Test Data**:
          - Test data will be created by respective QA Engineer on local environment :upside_down_face: based on scenarios and test cases.
        - **Executing Test Cases**:
-         - Test cases will be executed by respective QA Engineer on test environment based on designed scenarios, test cases and test data.
+         - Test cases will be executed by respective QA Engineer on local environment based on designed scenarios, test cases and test data.
          - Test results (Pass/Fail/Blocked) will be updated in test case suite.
        - **Defect Logging and Reporting**: QAs will be logging onto Kanban board (assuming Stitch uses Jira :slightly_smiling_face:) all the defects/bugs found during execution of test cases and during verification of tickets on Kanban boards.
        - **Retesting and Regression Testing**: Retesting for fixed bugs will be done by respective QA once it is resolved by respective developer and bug/defect status will be updated accordingly. In certain cases, regression testing will be done if required.
@@ -60,9 +57,9 @@ Then install all packages by doing a `yarn install`
          - Daily/Weekly status reports that includes bug reports
          - Test closure report
        - **Features to be Tested**:
-         - Stitch Todo List FE
-         - Stitch Todo List BE
-       - **Test Schedule**: Several phases will be carried out here from plaaning to regression testing. Considering the size of this web app testing shoudn't take more than 16 hours.
+         - Stitch Todo List Frontend (FE)
+         - Stitch Todo List Backend (BE)
+       - **Test Schedule**: Several phases will be carried out here from planning to regression testing. Considering the size of this web app testing shoudn't take more than 16 hours.
        - **Roles & Responsibilities**:
          - Product: Acts as a primary contact for development and test team. Also responsible for Project schedule and the overall success of the project.
          - Test: Responsible for Understanding requirements, writing and executing test cases, preparing Requirement Traceability Matrix (RTM), reviewing test cases, Defect reporting and tracking, retesting and regression testing.
@@ -114,7 +111,7 @@ Then install all packages by doing a `yarn install`
    - **Framework overview**
      - Framework uses Cypress for UI & API test and Typescript
      - Framework files can be found under `cypress/integration` folder
-     - Framework uses BDD approach (cucumber) to test design
+     - Framework uses BDD approach (cucumber) for test design
      - Tests are written in feature files which have a corresponding folder (with same name) containing test files/steps
      - Framework uses a page object design pattern (for the UI test)
    - **Steps to run**
@@ -145,7 +142,7 @@ Then install all packages by doing a `yarn install`
    - **Steps**:
      1. Ensure an exact replica of the production environment is available
      2. Write performance test scripts using JMeter for the following checks:
-        - Application's ability to create 10 todo items per second within 10am and 12pm
+        - Application's ability to create 10 todo items per second within 10am and 12pm. Script should simulate 10 users all creating a combined total of 10 todo items in one second
         - Application's ability to create 10 todo items per second before 10am and after 12pm
         - Application's ability to create 12 todo items of  per second within 10am and 12pm. Increment by 2 until application crashes or there is serious degradation in performance
      3. Provide report to the development team
